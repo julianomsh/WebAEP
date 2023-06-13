@@ -1,0 +1,63 @@
+.loginPage {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+}
+
+.loginForm {
+    background-color: rgba(0, 26, 78, 0.781);
+    color: white;
+    border-radius: 20px;
+}
+
+.employee_image{
+    width: 40px;
+    height: 40px;
+}
+
+
+.text-erro{
+    text-align: center;
+    color:red;
+    font-size:15px;
+}
+
+.grid-error{
+    background-color: rgba(252, 252, 252, 0.6);
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.form-control{
+    border-radius: 5px;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.p-login{
+    margin-top:10px;
+    text-align: center;
+
+}
+
+.btn-login{
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: button;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #222425;
+    margin-bottom: 0;
+    display: block;
+    overflow: visible;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: 2px solid transparent
+}
