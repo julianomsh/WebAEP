@@ -32,6 +32,21 @@ const [data,setData] = useState([])
     .catch(err => console.log(err))
   }
 
+  const Aceitar = (e) => {
+    alert("olicitacao de Estagio # ACEITA !!")
+  }
+
+  const Rejeitar = (e) => {
+    alert("Solicitacao de Estagio # REJEITADA #")
+  }
+
+  const [highlightedRow, setHighlightedRow] = useState(null);
+
+
+  function highlightRow(rowIndex) {
+    setHighlightedRow(rowIndex);
+  }
+  
   return (
    <div className='px-5 py-3'> 
       <div className='d-flex justify-content-center mt-2'>
@@ -42,12 +57,17 @@ const [data,setData] = useState([])
       <table className='table'>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Image</th>
-            <th>email</th>
-            <th>Address</th>
-            <th>Salary</th>
-            <th>Action</th>
+            <th>Universidade</th>
+
+            <th>Documento</th>
+
+            <th>E-mail Contato</th>
+
+            <th>Cuso/Período</th>
+
+            <th>Quantidade de Vagas</th>
+
+            <th>Editar / Excluir Solicitação</th>
           </tr>
         </thead>
         <tbody>
@@ -62,8 +82,11 @@ const [data,setData] = useState([])
               <td>{employee.salary}</td>
               <td>
                 <td>
-                  <Link to={`/employeeEdit/` + employee.id} className='btn btn-primary btn-sm me-2'>edit</Link>
-                  <button onClick={e => handleDelete(employee.id)} className='btn btn-sm btn-danger'>delete</button>
+                  <Link to={`/employeeEdit/` + employee.id} className='btn btn-primary'>Editar</Link>
+                  <button onClick={e => handleDelete(employee.id)} className='btn btn-danger'>Deletar </button>
+                  <button onClick={e => Aceitar()} className='btn btn-success'> Aceitar </button>
+                  <button onClick={e => Rejeitar()} className='btn btn-warning'>Rejeitar</button>
+                  
                 </td>
               </td>
             </tr>

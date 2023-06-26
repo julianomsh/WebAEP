@@ -44,23 +44,23 @@ function EmployeeEdit() {
         <h2>Update Employee</h2>
         <form className="row g-3 w-50" onSubmit={handleSubmit}>
            <div className="col-12">
-                <label for="inputName" className="form-label">Name</label>
-                <input type="text" className="form-control" id="inputName" placeholder='Nome' autoComplete='off'
+                <label for="inputName" className="form-label">Universidade</label>
+                <input type="text" className="form-control" id="inputName" placeholder='Universidade' autoComplete='off'
                 onChange={e => setData({...data, name: e.target.value})} value={data.name}/>
            </div>
             <div className="col-12">
-                <label for="inputEmail4" className="form-label">Email</label>
-                <input type="email" className="form-control" id="inputEmail4" placeholder='Email' autoComplete='off'
+                <label for="inputEmail4" className="form-label">E-mail</label>
+                <input type="email" className="form-control" id="inputEmail4" placeholder='email para contato' autoComplete='off'
                 onChange={e => setData({...data, email: e.target.value})} value={data.email}/>
             </div>
              <div className="col-12">
-                <label for="inputSalary" className="form-label">Salary</label>
-                <input type="text" className="form-control" id="inputSalary" placeholder="Salario" autoComplete='off'
+                <label for="inputSalary" className="form-label">Quantidade de Vagas</label>
+                <input type="text" className="form-control" id="inputSalary" placeholder="Quantidade de Vagas" autoComplete='off'
                   onChange={e => setData({...data, salary: e.target.value})} value={data.salary}/>
             </div>
             <div className="col-12">
-                <label for="inputAddress" className="form-label">Address</label>
-                <input type="text" className="form-control" id="inputAddress" placeholder="address" autoComplete='off'
+                <label for="inputAddress" className="form-label">Curso/Período</label>
+                <input type="text" className="form-control" id="inputAddress" placeholder="Período" autoComplete='off'
                   onChange={e => setData({...data, address: e.target.value})} value={data.address}/>
             </div>
             <div className="col-12 mb-3">
